@@ -25,7 +25,7 @@ public final class CashMachine extends GUI {
         setItem(22, TNLItem.create(Material.BROWN_SHULKER_BOX).setName("§6500 Coins §8» §d1 Extra Crate Key").setShiny(true).
                 setLore("§8* §7Coins§8: §6$" + StringUtil.format("#,##0.0", PlayerStorage.getInstance().getCoins(player)),
                         "§8* §7Keys§8: §6" + StringUtil.format("#,##0.0", PlayerStorage.getInstance().getCrateKeys(player, Crate.Type.EXTRA))).
-                toGUIItem().addInteractions(new Interaction(player1 -> {
+                toGUIItem().addInteractions(new Interaction(player1 /* the player that clicks the item */ -> {
                     double coins = PlayerStorage.getInstance().getCoins(player1);
                     int price = 500;
                     if (coins >= price) {
