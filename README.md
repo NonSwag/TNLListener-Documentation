@@ -1,3 +1,3 @@
 # Index
 
-[GUI Example](https://github.com/NonSwag/TNLListener-Documentation/gui.class)
+[GUI Example](https://github.com/NonSwag/TNLListener-Documentation/gui.java)
